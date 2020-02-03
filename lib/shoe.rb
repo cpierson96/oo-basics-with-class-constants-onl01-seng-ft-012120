@@ -13,6 +13,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   def brand=(brand)
+    if BRANDS include?(brand)
     @brand = brand 
     
     BRANDS <<  brand 
