@@ -8,8 +8,9 @@ class Shoe
     @brand = brand
     if BRANDS include?(brand)
     @brand = brand 
-    
     BRANDS <<  brand 
+  end 
+end 
 
   def cobble
     self.condition = "new"
